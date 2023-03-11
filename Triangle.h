@@ -1,3 +1,5 @@
+// Triangle.h
+
 #include "Shape.h"
 #include <math.h>
 
@@ -12,15 +14,41 @@ class Triangle : public Shape {
                 width = w; height = h; length = l;
             }
         }
-        auto getLength() const {
+        auto getLength() {
             return length;
         }
         void setLength(float l) {
             if (l >= 0)
                 length = l;
         }
-        auto Area() {
-            float half_p = (width + height + length) /2;
+
+        bool isTriangle() {
+            if (Area() > 0)
+                return 1;
+            return 0;
+        }
+        bool isRightTriangle() {
+            if (isTriangle() and (width*width + height*height == length*length or height*height + length*length == width*width or length*length + width*width == height*height))
+                return 1;
+            return 0;
+        }
+        bool isEquilateral() {
+            if (isTriangle() and (width == height and height == length))
+                return 1;
+            return 0;
+        }
+        bool isIsosceles() {
+            if (isTriangle() and not isEquilateral() and (width == height or height == length or length == width))
+                return 1;
+            return 0;
+        }
+
+        float Perimeter() {
+            return width + height + length;
+        }
+
+        float Area() {
+            float half_p = Perimeter()/2;
             return sqrt(half_p*(half_p-width)*(half_p-height)*(half_p-length));
         }
 };

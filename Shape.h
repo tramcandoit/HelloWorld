@@ -1,12 +1,14 @@
+// Shape.h
+
 class Shape {
     protected:
         float width;
         float height;
     public:
-        auto getWidth() const {
+        auto getWidth() {
             return width;
         }
-        auto getHeight() const {
+        auto getHeight() {
             return height;
         }
         void setWidth(float w) {
