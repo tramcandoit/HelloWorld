@@ -23,3 +23,5 @@ Kết quả:
 8. Không phải tam giác 
 9. Không phải tam giác 
 10. Là tam giác, diện tích = 2.9
+
+tri test
