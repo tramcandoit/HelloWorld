@@ -27,7 +27,7 @@ int main() {
     if (A.isIsosceles())
         cout << "Day la tam giac can" << '\n';
 
-    cout << "Dien tich tam giac la: " << setprecision(3) <<  A.Area() << " (tra ve 0 neu khong phai la tam giac hop le)" <<'\n';
+    cout << "Dien tich tam giac la: (lam tron 3 chu so thap phan) " << setprecision(3) <<  A.Area() << " (tra ve 0 neu khong phai la tam giac hop le)" <<'\n';
     cout << "Tri test";
     return 0;
 }
