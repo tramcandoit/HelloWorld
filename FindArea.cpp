@@ -19,6 +19,7 @@ int main() {
         cout << "Day khong phai la tam giac";
         return 0;
     }
+    
     if (A.isRightTriangle())
         cout << "Day la tam giac vuong" << '\n';
     if (A.isEquilateral())
