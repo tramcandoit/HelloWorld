@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    cout << "Tri test";
+
     float w, h, l;
     cout <<  "Nhap ba canh cua 1 tam giac: ";
     cin >> w >> h >> l;
