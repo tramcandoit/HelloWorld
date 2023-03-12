@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    cout << "Tri test";
+
     float w, h, l;
     cout <<  "Nhap ba canh cua 1 tam giac: ";
     cin >> w >> h >> l;
@@ -26,8 +26,8 @@ int main() {
         cout << "Day la tam giac deu" << '\n';
     if (A.isIsosceles())
         cout << "Day la tam giac can" << '\n';
-    cout << "Dien tich tam giac la: (lam tron 3 chu so thap phan) " << setprecision(3) <<  A.Area() << " (tra ve 0 neu khong phai la tam giac hop le)" <<'\n';
-    cout << "Tri test";
+    cout << "Dien tich (lam tron 3 chu so thap phan) " << setprecision(3) <<  A.Area() << " (tra ve 0 neu khong phai la tam giac hop le)tam giac la: " <<'\n';
+    cout << "branch tri"
 
     return 0;
 }
